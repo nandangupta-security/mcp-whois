@@ -15,9 +15,9 @@ A simple MCP server that performs WHOIS lookups for any domain, built with [Fast
 
 **1. Clone or download the server file**
 
-Save `whois_server.py` to a directory on your machine, e.g.:
+Save `whoisserver.py` to a directory on your machine, e.g.:
 ```
-~/mcp-servers/whois_server.py
+~/mcp-servers/whoisserver.py
 ```
 
 **Option A — Without a virtual environment (simple)**
@@ -71,7 +71,7 @@ Add the following:
   "mcpServers": {
     "whois": {
       "command": "python",
-      "args": ["/full/path/to/whois_server.py"]
+      "args": ["/full/path/to/whoisserver.py"]
     }
   }
 }
@@ -84,7 +84,7 @@ Add the following:
   "mcpServers": {
     "whois": {
       "command": "/full/path/to/venv/bin/python",
-      "args": ["/full/path/to/whois_server.py"]
+      "args": ["/full/path/to/whoisserver.py"]
     }
   }
 }
@@ -92,7 +92,7 @@ Add the following:
 
 > - **Mac/Linux venv path:** `path/to/venv/bin/python`
 > - **Windows venv path:** `path\to\venv\Scripts\python.exe`
-> - Always use the full absolute path. On Mac/Linux, run `realpath whois_server.py` to get it.
+> - Always use the full absolute path. On Mac/Linux, run `realpath whoisserver.py` to get it.
 
 **Restart Claude Desktop** after saving the config.
 
@@ -137,6 +137,6 @@ Country: US
 
 ```
 mcp-servers/
-└── whois_server.py   # The MCP server
+└── whoisserver.py   # The MCP server
 └── README.md         # This file
 ```
